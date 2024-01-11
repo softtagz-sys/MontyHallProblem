@@ -1,7 +1,7 @@
 package domain;
 
 public class Door {
-    private int id;
+    private final int id;
     private boolean hasPrize;
     private boolean isChosen;
     private boolean isRemoved;

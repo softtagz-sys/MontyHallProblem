@@ -9,14 +9,14 @@ public class Program {
         RoundResult result = playRounds();
 
         System.out.println("Rounds played with switch: " + AMOUNT_OF_ROUNDS);
-        System.out.println("Amount of rounds won: " + result.getWonRoundsSwitch());
-        System.out.println("Amount of rounds lost: " + (AMOUNT_OF_ROUNDS - result.getWonRoundsSwitch()));
-        System.out.println("Percentage of rounds won: " + (double)result.getWonRoundsSwitch() / AMOUNT_OF_ROUNDS * 100 + "%");
+        System.out.println("Amount of rounds won: " + result.wonRoundsSwitch());
+        System.out.println("Amount of rounds lost: " + (AMOUNT_OF_ROUNDS - result.wonRoundsSwitch()));
+        System.out.println("Percentage of rounds won: " + (double)result.wonRoundsSwitch() / AMOUNT_OF_ROUNDS * 100 + "%");
 
         System.out.println("\nRounds played without switch: " + AMOUNT_OF_ROUNDS);
-        System.out.println("Amount of rounds won: " + result.getWonRoundsNoSwitch());
-        System.out.println("Amount of rounds lost: " + (AMOUNT_OF_ROUNDS - result.getWonRoundsNoSwitch()));
-        System.out.println("Percentage of rounds won: " + (double)result.getWonRoundsNoSwitch() / AMOUNT_OF_ROUNDS * 100 + "%");
+        System.out.println("Amount of rounds won: " + result.wonRoundsNoSwitch());
+        System.out.println("Amount of rounds lost: " + (AMOUNT_OF_ROUNDS - result.wonRoundsNoSwitch()));
+        System.out.println("Percentage of rounds won: " + (double)result.wonRoundsNoSwitch() / AMOUNT_OF_ROUNDS * 100 + "%");
     }
 
     private static RoundResult playRounds() {
